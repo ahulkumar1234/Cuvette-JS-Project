@@ -142,6 +142,8 @@ function showResultScreen(userChoice, compChoice, result) {
         winTexth2.textContent = ""
         playAgainBtn.textContent = "replay"
         hurrayNxtBtn.classList.remove('hurray-btn-show')
+        userCircle.classList.remove("winner");
+        compCircle.classList.remove("winner");
     }
 }
 
