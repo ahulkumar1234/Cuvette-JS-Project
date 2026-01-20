@@ -109,9 +109,9 @@ const hurrayNxtBtn = document.querySelector(".hurray-btn");
 const hurrayPlayAgainBtn = document.querySelector('.hurray-screen button')
 
 const images = {
-    rock: "./public/stone.png",
-    paper: "./public/paper.png",
-    scissor: "./public/scissor.png"
+    rock: "/public/stone.png",
+    paper: "/public/paper.png",
+    scissor: "/public/scissor.png"
 };
 
 function showResultScreen(userChoice, compChoice, result) {
