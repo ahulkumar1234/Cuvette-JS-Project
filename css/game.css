@@ -1,0 +1,377 @@
+#game-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.score-board-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.score-board-container-hide {
+  display: none;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #FFFFFF;
+  border-radius: 13px;
+  width: 800px;
+  height: 158px;
+  padding: 20px 15px;
+}
+
+.game-name h1 {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.scores {
+  display: flex;
+  gap: 20px;
+}
+
+.comp {
+  background-color: #FFFFFF;
+  color: #656565;
+  width: 139px;
+  height: 128px;
+  border-radius: 9px;
+  padding: 5px;
+}
+
+.comp p {
+  text-align: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.comp h1 {
+  color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 68px;
+}
+
+.user {
+  background-color: #FFFFFF;
+  color: #656565;
+  width: 139px;
+  height: 128px;
+  border-radius: 9px;
+  padding: 5px;
+}
+
+.user p {
+  text-align: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.user h1 {
+  color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 68px;
+}
+
+
+/*  rock paper scissors options */
+
+
+.triangle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 350px;
+  margin-top: 100px;
+}
+
+.triangle-container-hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 350px;
+  margin-top: 100px;
+  display: none;
+}
+
+
+.choices {
+  z-index: 10;
+}
+
+#rock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  border-radius: 50%;
+  border: 15px solid #0074B6;
+  width: 140px;
+  height: 140px;
+  box-shadow: 1px 1px 11px black;
+  cursor: pointer;
+}
+
+#scissor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  border-radius: 50%;
+  border: 15px solid #BD00FF;
+  width: 140px;
+  height: 140px;
+  box-shadow: 1px 1px 11px black;
+  cursor: pointer;
+}
+
+#paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  border: 15px solid #FFA943;
+  width: 140px;
+  height: 140px;
+  box-shadow: 1px 1px 11px black;
+  cursor: pointer;
+}
+
+/* images  */
+#rock img {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+#scissor img {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+#paper img {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* lines */
+
+.line {
+  width: 300px;
+  height: 15px;
+  background-color: #0000008b;
+  pointer-events: none;
+}
+
+.line-top {
+  position: absolute;
+  top: 60px;
+}
+
+.line-left {
+  position: absolute;
+  left: 0;
+  transform: rotate(60deg);
+}
+
+.line-right {
+  position: absolute;
+  right: 0;
+  transform: rotate(120deg);
+}
+
+/* rule-button */
+
+.btn-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.rule-btn {
+  background-color: transparent;
+  padding: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.hurray-btn {
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 21px;
+  cursor: pointer;
+  display: none;
+}
+
+.hurray-btn-show{
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 21px;
+  cursor: pointer;
+  display: block;
+}
+
+.rule-box-container {
+  /* width: 350px;
+  height: 380px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+
+
+.rule-box {
+  width: 278px;
+  height: 325px;
+  padding: 20px;
+  background-color: #004429;
+  border: 7px solid #FFFFFF;
+  border-radius: 15px;
+  position: absolute;
+  box-shadow: 1px 1px 11px black;
+  display: none;
+  right: 30px;
+  top: 30px;
+}
+
+.rule-box-show {
+  width: 278px;
+  height: 325px;
+  padding: 20px;
+  background-color: #004429;
+  border: 7px solid #FFFFFF;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 1px 1px 11px black;
+  display: block;
+}
+
+.rule-box h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rule-box p {
+  position: relative;
+  font-size: 13px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.rule-box p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #FFD600;
+}
+
+.cross {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  border: 5px solid #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.cross-show {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  border: 5px solid #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 15px;
+  cursor: pointer;
+  display: flex;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+  .score-board-container {}
+
+  .head {
+    width: 650px;
+    height: 150px;
+    margin: 0 10px 0 10px;
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/hurray.css">
+    <link rel="stylesheet" href="css/result.css">
+    <title>Rock | Paper | Scissors</title>
+</head>
+
+<body>
+
+    <!-- score-board-container -->
+
+    <div class="score-board-container">
+        <div class="head">
+            <div class="game-name">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="scores">
+                <div class="comp">
+                    <p>COMPUTER SCORE</p>
+                    <h1 id="comp-score">0</h1>
+                </div>
+                <div class="user">
+                    <p>USER <br> SCORE</p>
+                    <h1 id="user-score">0</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rock paper scissors options -->
+
+    <div id="game-screen">
+        <div class="triangle-container">
+
+            <!-- Lines -->
+            <div class="line line-top"></div>
+            <div class="line line-left"></div>
+            <div class="line line-right"></div>
+
+            <!-- Circles -->
+            <div id="rock" class="choices">
+                <img src="/public/stone.png" />
+            </div>
+
+            <div id="scissor" class="choices">
+                <img src="/public/scissor.png" />
+            </div>
+
+            <div id="paper" class="choices">
+                <img src="/public/paper.png" />
+            </div>
+
+        </div>
+    </div>
+
+    <!-- rule-box -->
+
+    <div class="rule-box-container">
+        <div class="rule-box">
+            <h1>Game Rules</h1>
+            <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+            <p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors.”</p>
+            <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+            <p>If both players lay down the same hand, each player lays down another hand</p>
+        </div>
+
+        <!-- rule-box cross -->
+
+        <button class="cross">X</button>
+    </div>
+
+    <!-- rule-button -->
+
+    <div class="btn-container">
+        <button class="rule-btn">Rules</button>
+        <button class="hurray-btn">next</button>
+    </div>
+
+    <!-- result-screen -->
+
+    <div id="result-screen">
+
+        <div class="result-container">
+            <div class="choice-text">
+                <h3>You Picked</h3>
+                <h3>PC Picked</h3>
+            </div>
+            <div id="user-result">
+                <img src="" />
+            </div>
+
+            <div class="win-text">
+                <h1></h1>
+                <h2></h2>
+                <button></button>
+            </div>
+
+            <div id="comp-result">
+                <img src="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- hurray-screen -->
+
+    <div class="hurray-screen">
+
+        <div class="star-container">
+            <img src="./public/Group 5.png" alt="">
+
+            <div class="trophy-container">
+                <img src="./public/Vector.png" alt="">
+            </div>
+        </div>
+        <div class="hurray-container">
+            <h1 class="hurray">HURRAY!!</h1>
+            <h2 class="won-game">YOU WON THE GAME</h2>
+        </div>
+
+        <div class="play-again"><button>PLAY AGAIN</button></div>
+
+    </div>
+
+
+
+
+    <script src="js/ui.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+
+</html>

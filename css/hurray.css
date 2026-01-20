@@ -1,0 +1,76 @@
+.hurray-screen{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.hurray-screen-show{
+    display: flex;
+}
+.star-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+.star-container img {
+    width: 504px;
+    height: 297px;
+}
+
+.trophy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+}
+
+.trophy-container img {
+    width: 200px;
+    height: 201px;
+}
+
+.hurray-container{
+    margin-top: 40px;
+    position: relative;
+}
+.hurray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 91px;
+    letter-spacing: 10px;
+    font-weight: 500;
+}
+
+.won-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 41px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.play-again{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+
+}
+
+.play-again button{
+    background-color: #FFFFFF;
+    width: 174px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+}

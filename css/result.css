@@ -1,0 +1,132 @@
+.result-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+.result-container-hide{
+    display: flex;
+}
+
+#user-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 50px;
+    border-radius: 50%;
+    border: 15px solid #0074B6;
+    width: 140px;
+    height: 140px;
+    box-shadow: 1px 1px 11px black;
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    top: 200px;
+}
+
+#user-result img {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+#comp-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    border-radius: 50%;
+    border: 15px solid #FFA943;
+    width: 140px;
+    height: 140px;
+    box-shadow: 1px 1px 11px black;
+    cursor: pointer;
+    position: absolute;
+    right: 20%;
+    top: 200px;
+}
+
+#comp-result img {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.choice-text {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 150px;
+}
+
+.choice-text h3 {
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.win-text {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-text h1 {
+    font-size: 39px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.win-text h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.win-text button {
+    background-color: #FFFFFF;
+    width: 165px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.winner {
+  position: relative;
+  animation: glowPulse 1.5s infinite;
+}
+
+
+
+
+
+@keyframes glowPulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(15, 93, 15, 0.6),
+      0 0 0 20px rgba(22, 163, 22, 0.207),
+      0 0 0 40px rgba(32, 162, 32, 0.2);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 20px rgba(39, 155, 39, 0.6),
+      0 0 0 40px rgba(35, 101, 35, 0.2),
+      0 0 0 60px rgba(81, 185, 81, 0);
+  }
+}
